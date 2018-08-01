@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+  </head>
+
+  <body>
+    <a-scene fog="type: linear; color: #000; near:2; far:3.5;">
+
+      <a-assets>
+        <img id="mytexture" src="texture.jpg">
+      </a-assets>
+      
+      <a-entity geometry="primitive: cylinder; height: 8; radius: 2" material="src: #mytexture; color: #696949; roughness: 1; metalness: 0; side:back" position="0 0 0">
+      </a-entity>
+
+      <a-sky color="#ECECEC"></a-sky>
+
+      <a-camera fov="50" zoom="1"></a-camera>
+
+    </a-scene>
+  </body>
+</html>
